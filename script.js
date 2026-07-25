@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzE6UtjdrqHwYYSQaxbzF3skzrsOesO0EGgNwqCC1-KZi278oS6WSqRfqnnk2T0FCW_/exec";
+const GOOGLE_SCRIPT_URL ="https://script.google.com/macros/s/AKfycbwAC---mvU0xd6JQADMWkz4sELysM0Yt_q086yEyPWPh9WyjZF_OIUe_FekmRjP960T/exec";
 
 const form = document.getElementById("surveyForm");
 const otherCheck = document.getElementById("otherFishCheck");
