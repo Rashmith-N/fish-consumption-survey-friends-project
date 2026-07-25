@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b6b6f">
+
+  <title>Fish Consumption Survey for Microplastic Research</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="page">
+
+    <section class="card">
+
+      <header class="hero">
+        <div class="badge">Research Survey</div>
+
+        <h1>
+          Fish Consumption Survey for Microplastic Research
+        </h1>
+      </header>
+
+
+      <div class="content">
+
+        <p class="intro">
+          <strong>Dear Participant,</strong>
+        </p>
+
+        <p class="intro">
+          I am a B.Sc. Zoology student conducting a research project to study
+          the presence and amount of microplastics in commonly consumed edible fish.
+          The information you provide will help identify the fish species that are
+          most frequently consumed so they can be included in the study.
+          Your responses will be used only for academic purposes and will remain confidential.
+        </p>
+
+
+        <form id="surveyForm">
+
+
+          <!-- NAME -->
+
+          <div class="field">
+
+            <label for="name">
+              Name of the person
+              <span class="required">*</span>
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+          <!-- AGE -->
+
+          <div class="field">
+
+            <label for="age">
+              Age
+              <span class="required">*</span>
+            </label>
+
+            <input
+              id="age"
+              name="age"
+              type="number"
+              min="1"
+              max="120"
+              inputmode="numeric"
+              placeholder="Enter your age"
+              required
+            >
+
+          </div>
+
+
+          <!-- QUESTIONS -->
+
+          <div class="section-heading">
+
+            <h2>
+              Please answer the following questions:
+            </h2>
+
+            <p>
+              Tick all that apply
+            </p>
+
+          </div>
+
+
+          <!-- QUESTION 1 -->
+
+          <fieldset>
+
+            <legend>
+              1. Which fish do you usually eat?
+              <span class="required">*</span>
+            </legend>
+
+
+            <div class="fish-grid">
+
+
+              <!-- BANGUDE -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  name="fish"
+                  value="Bangude (Mackerel Fish)"
+                >
+
+                <span class="fish-card">
+
+                  <img
+                    src="bangude-mackerel.jpeg"
+                    alt="Bangude (Mackerel Fish)"
+                  >
+
+                  <span class="fish-name">
+                    Bangude (Mackerel Fish)
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+              <!-- BOOTHAI -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  name="fish"
+                  value="Boothai (Indian oil sardine)"
+                >
+
+                <span class="fish-card">
+
+                  <img
+                    src="boothai-indian-oil-sardine.jpeg"
+                    alt="Boothai (Indian oil sardine)"
+                  >
+
+                  <span class="fish-name">
+                    Boothai (Indian oil sardine)
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+              <!-- BOLANGIR -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  name="fish"
+                  value="Bolangir (Silver Fish)"
+                >
+
+                <span class="fish-card">
+
+                  <img
+                    src="bolangir-silver-fish.jpeg"
+                    alt="Bolangir (Silver Fish)"
+                  >
+
+                  <span class="fish-name">
+                    Bolangir (Silver Fish)
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+              <!-- DISCO -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  name="fish"
+                  value="Disco (Bullseye Fish)"
+                >
+
+                <span class="fish-card">
+
+                  <img
+                    src="disco-bullseye-fish.jpeg"
+                    alt="Disco (Bullseye Fish)"
+                  >
+
+                  <span class="fish-name">
+                    Disco (Bullseye Fish)
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+              <!-- NANG -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  name="fish"
+                  value="Nang (Sole Fish)"
+                >
+
+                <span class="fish-card">
+
+                  <img
+                    src="nang-sole-fish.jpeg"
+                    alt="Nang (Sole Fish)"
+                  >
+
+                  <span class="fish-name">
+                    Nang (Sole Fish)
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+              <!-- OTHERS -->
+
+              <label class="fish-option">
+
+                <input
+                  type="checkbox"
+                  id="otherFishCheck"
+                  name="fish"
+                  value="Others"
+                >
+
+                <span class="fish-card other-card">
+
+                  <span class="other-icon">＋</span>
+
+                  <span class="fish-name">
+                    Others
+                  </span>
+
+                  <span class="checkmark">✓</span>
+
+                </span>
+
+              </label>
+
+
+            </div>
+
+
+            <!-- OTHER FISH TEXT BOX -->
+
+            <div
+              id="otherFishBox"
+              class="other-input hidden"
+            >
+
+              <label for="otherFish">
+                Please specify other fish
+              </label>
+
+              <input
+                id="otherFish"
+                name="otherFish"
+                type="text"
+                placeholder="Enter fish name"
+              >
+
+            </div>
+
+
+            <p
+              id="fishError"
+              class="error"
+              role="alert"
+            ></p>
+
+
+          </fieldset>
+
+
+          <!-- QUESTION 2 -->
+
+          <fieldset>
+
+            <legend>
+              2. How often do you eat fish?
+              <span class="required">*</span>
+            </legend>
+
+
+            <div class="frequency-list">
+
+
+              <label class="radio-option">
+
+                <input
+                  type="radio"
+                  name="frequency"
+                  value="Daily"
+                  required
+                >
+
+                <span>Daily</span>
+
+              </label>
+
+
+              <label class="radio-option">
+
+                <input
+                  type="radio"
+                  name="frequency"
+                  value="2–3 times per week"
+                >
+
+                <span>2–3 times per week</span>
+
+              </label>
+
+
+              <label class="radio-option">
+
+                <input
+                  type="radio"
+                  name="frequency"
+                  value="Once a week"
+                >
+
+                <span>Once a week</span>
+
+              </label>
+
+
+              <label class="radio-option">
+
+                <input
+                  type="radio"
+                  name="frequency"
+                  value="Occasionally"
+                >
+
+                <span>Occasionally</span>
+
+              </label>
+
+
+              <label class="radio-option">
+
+                <input
+                  type="radio"
+                  name="frequency"
+                  value="Rarely"
+                >
+
+                <span>Rarely</span>
+
+              </label>
+
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- SUBMIT -->
+
+          <button
+            id="submitBtn"
+            type="submit"
+          >
+            Submit Survey
+          </button>
+
+
+          <p
+            id="status"
+            class="status"
+            role="status"
+          ></p>
+
+
+        </form>
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div
+          id="successMessage"
+          class="success hidden"
+          aria-live="polite"
+        >
+
+          <div class="success-icon">✓</div>
+
+          <h2>Thank you!</h2>
+
+          <p>
+            Your survey response has been submitted successfully.
+          </p>
+
+          <button
+            type="button"
+            id="anotherBtn"
+            class="secondary-btn"
+          >
+            Submit another response
+          </button>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      Academic Research Survey
+    </footer>
+
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
